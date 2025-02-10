@@ -19,11 +19,11 @@ python --version
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/yourusername/car-racing-flask.git
+git clone https://github.com/yourGostCompiler/car-racing-flask.git
 cd car-racing-flask
 ```
 
-### Step 2: Set Up a Virtual Environment (Optional but Recommended)
+### Step 2: Set Up a Virtual Environment 
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
