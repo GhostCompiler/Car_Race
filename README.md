@@ -1,49 +1,68 @@
-# 🚗 Car Racing Game
+# Car Racing Game (Flask + Pygame)
 
-A fun and simple **Car Racing Game** built with **Python** and **Pygame**. Avoid hurdles while driving your car on the road and see how long you can survive!
+## Description
+This is a simple car racing game built using **Pygame** for game mechanics and **Flask** to serve it as a web application. The game involves controlling a car on a road while avoiding obstacles (hurdles). The speed increases over time to enhance difficulty, and the game ends if the car collides with an obstacle.
 
-## 📌 Features
-- 🏎 **Smooth Car Movement** (Left/Right controls)
-- 🚧 **Random Hurdles** appear on the road
-- 🔥 **Collision Detection** (Game Over on hit)
-- 🎵 **Background Music** for an immersive experience
-- 📊 **Live Score Counter**
+## Features
+- **Smooth Car Movement** – Control the car using arrow keys.
+- **Dynamic Road and Hurdles** – Moving background and randomly appearing obstacles.
+- **Collision Detection** – Game ends when the car hits a hurdle.
+- **Score Tracking** – Score increases as the game progresses.
+- **Flask Integration** – Run the game in a web browser.
 
-## 🛠 Installation
-### **1️⃣ Install Python & Pygame**
-Make sure you have Python installed. Then, install Pygame using:
-```sh
-pip install pygame
+## Installation & Setup
+### Prerequisites
+Ensure you have Python installed. You can check by running:
+```bash
+python --version
 ```
 
-### **2️⃣ Clone the Repository**
-```sh
-git clone https://github.com/GhostCompiler/car-racing-game.git
-cd car-racing-game
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/yourusername/car-racing-flask.git
+cd car-racing-flask
 ```
 
-### **3️⃣ Run the Game**
-```sh
-python game.py
+### Step 2: Set Up a Virtual Environment (Optional but Recommended)
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
 ```
 
-## 🎮 Controls
-- **Left Arrow (⬅️)** → Move Car Left
-- **Right Arrow (➡️)** → Move Car Right
-
-## 📷 Gameplay Screenshot
-![Car Racing Game Screenshot](static/assets/screenshot.png)
-
-## 🏁 Game Rules
-- Drive your car on the road and **avoid hitting obstacles**.
-- If your car **collides with a hurdle**, the game **ends**.
-- Your **score increases** the longer you survive!
-
-## 📂 File Structure
-```
-/car-racing-game
-│── game.py             # Main game script
-│── README.md           # Game Documentation
-│── static/assets/      # Game assets (car, road, music, etc.)
+### Step 3: Run the Flask App
+```bash
+python app.py
 ```
 
+### Step 4: Open in Browser
+Visit `http://127.0.0.1:5000` in your web browser to start playing the game.
+
+## File Structure
+```
+car-racing-flask/
+│── app.py               # Flask Backend
+│── game.py              # Pygame logic
+│── requirements.txt     # Dependencies
+│── README.md            # Project Documentation
+│── static/
+│   ├── assets/          # Car, road, and hurdle images
+│   ├── css/
+│   │   ├── style.css    # Game styling
+│   ├── js/
+│   │   ├── game.js      # JavaScript for interactivity
+│── templates/
+│   ├── index.html       # Game interface
+```
+
+## Controls
+- **Left Arrow (`←`)** – Move car left
+- **Right Arrow (`→`)** – Move car right
+- **Up Arrow (`↑`)** – Accelerate
+- **Down Arrow (`↓`)** – Decelerate
+
+## Future Improvements
+- Add a leaderboard for high scores.
+- Implement different difficulty levels.
+- Mobile responsiveness.
+
+Happy Racing! 🏎️💨
